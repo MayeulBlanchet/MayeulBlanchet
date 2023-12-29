@@ -1,0 +1,17 @@
+from random import randint
+number=randint(1,1000)
+counter=0
+lol=True
+while lol:
+    answer=int(input('choisi'))
+    counter=counter+1
+    if answer==number:
+        print(number)
+        print("you tried {} times".format(counter))
+        runnig=False
+        
+    elif answer>number:
+        print('less')
+    elif answer<number:
+        print('more')        
+
